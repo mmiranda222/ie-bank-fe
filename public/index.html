@@ -5,13 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>IE Bank Web App</title>
+    <style>
+      /* CSS styles for the homepage */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #35424a;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
+    <header>
+      <h1>Welcome to IE Bank</h1>
+    </header>
+    <div class="container">
+      <h2>Secure Banking Services</h2>
+      <p>Enjoy secure and convenient banking with IE Bank.</p>
+      <p>Explore our range of services including savings accounts, loans, and more.</p>
+    </div>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but JavaScript is required to view this site. Please enable JavaScript in your browser settings.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <script>
+      // JavaScript code
+      // You can add more JavaScript functionality here as needed
+      // Example: Add console log
+      console.log('Bank web app loaded.');
+    </script>
   </body>
 </html>
