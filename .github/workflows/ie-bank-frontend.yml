@@ -11,6 +11,7 @@ on:
 
 env:
   FRONTEND_WEBAPP_DEV: mmiranda-fe-dev
+  FRONTEND_WEBAPP_UAT: mmiranda-fe-uat
 
 jobs:
   build:
