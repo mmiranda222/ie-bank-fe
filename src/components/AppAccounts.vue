@@ -24,6 +24,7 @@
             <thead>
               <tr>
                 <th scope="col">Account Name</th>
+                <th cope="col">Country</th>
                 <th scope="col">Account Number</th>
                 <th scope="col">Account Balance</th>
                 <th scope="col">Account Currency</th>
@@ -34,6 +35,7 @@
             <tbody>
               <tr v-for="account in accounts" :key="account.id">
                 <td>{{ account.name }}</td>
+                <td>{{ account.country }}</td>
                 <td>{{ account.account_number }}</td>
                 <td>{{ account.balance }}</td>
                 <td>{{ account.currency }}</td>
@@ -270,6 +272,7 @@ export default {
     // Initialize forms empty
     initForm() {
       this.createAccountForm.name = "";
+      this.createAccountForm.country = "";
       this.createAccountForm.currency = "";
       this.editAccountForm.id = "";
       this.editAccountForm.name = "";
@@ -281,6 +284,7 @@ export default {
       this.$refs.addAccountModal.hide(); //hide the modal when submitted
       const payload = {
         name: this.createAccountForm.name,
+        country: this.createAccountForm.country,
         currency: this.createAccountForm.currency,
         country: this.createAccountForm.country,
       };
